@@ -1,0 +1,735 @@
+@import url("fonts/fontawesome/css/fontawesome.min.css");
+@import url("fonts/fontawesome/css/brands.min.css");
+@import url("fonts/fontawesome/css/solid.min.css");
+
+@import url("animate.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: #ddd;
+    transition: all 0.3s ease 0s;
+    text-decoration:none;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #E6922E;
+    text-decoration:none;
+}
+
+a.active{
+    color: #E6922E;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+}
+
+/*---------------------------------- nav bar ---------------------------------------*/
+.header-one {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+.topbar-area {
+    background: rgba(4, 23, 46, 0.8) none repeat scroll 0 0;
+}
+
+.topbar-left ul li a i {
+    color: #E6922E;
+    font-size: 16px;
+}
+
+.topbar-right {
+    position: relative;
+    display: block;
+}
+
+.top-social ul li a {
+    margin-right: 5px;
+    text-align: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    line-height: 26px;
+}
+
+.top-social ul li a:hover {
+    color: #E6922E;
+}
+
+/*-------*/
+header .navbar {
+    background: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #E6922E;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #E6922E;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+
+.navbar-light .navbar-toggler {
+    color: #E6922E;
+}
+
+@media (max-width:786px) {
+    header .navbar {
+        width: 100%;
+        background: rgba(4, 23, 46, 0.8);
+    }
+}
+
+/*---------------------------------- index -----------------------------------------*/
+body.home header .navbar {
+    background-color: rgba(10, 24, 40, 0.8);
+}
+
+body.home .carousel-item {
+    width: 100%;
+    height: 80vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.home .about-section .separator {
+    color: #fff;
+    background-color: #E6922E;
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    position: relative;
+}
+
+body.home .about-section .about-head p {
+    font-size: 18px;
+    color: #494949;
+}
+
+body.home .about-section img {
+    height: 350px;
+}
+
+body.home .service-section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+body.home .service-section .icon-cell i {
+    font-size: 64px;
+    line-height: 77px;
+}
+
+body.home .service-section .counter-box p {
+    font-size: 20px;
+}
+
+body.home .service-section .counter-box .counter {
+    font-size: 60px; 
+}
+
+body.home .service-section .separator {
+    color: #fff;
+    background-color: #E6922E;
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    position: relative;
+}
+
+body.home .blog-section .heading-section .subheading {
+    font-size: 12px;
+    display: block;
+    font-weight: 600;
+    color: #E6922E;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+  
+body.home .blog-section .heading-section h2 {
+    font-size: 30px;
+    font-weight: 800; 
+}
+    
+@media (max-width: 767.98px) {
+    .heading-section h2 {
+        font-size: 28px; 
+    } 
+}
+
+body.home .blog-section .blog-entry {
+    background: #fff;
+    -webkit-box-shadow: 5px 20px 18px 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 20px 18px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 20px 18px 8px rgba(0, 0, 0, 0.1); 
+}
+    
+@media (min-width: 768px) {
+    .blog-entry {
+        margin-bottom: 40px; 
+    } 
+}
+    
+@media (max-width: 767.98px) {
+    .blog-entry {
+        margin-bottom: 30px; 
+    } 
+}
+    
+body.home .blog-section .blog-entry .text {
+    position: relative;
+    border-top: 0;
+    border-radius: 2px; 
+}
+      
+body.home .blog-section .blog-entry .text .tag {
+    color: #b3b3b3; 
+}
+    
+body.home .blog-section .blog-entry .text .heading {
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-weight: 400; 
+}
+    
+body.home .blog-section .blog-entry .text .heading a {
+    color: #000000; 
+}
+          
+body.home .blog-section .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
+    color: #E6922E; 
+}
+      
+body.home .blog-section .blog-entry .text .meta-chat {
+    color: #E6922E; 
+}
+      
+body.home .blog-section .blog-entry .text .read {
+    color: #000000;
+    font-size: 14px; 
+}
+    
+body.home .blog-section .blog-entry .meta > div {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+}
+      
+body.home .blog-section .blog-entry .meta > div a {
+    color: #999999;
+    font-weight: 500;
+}
+        
+body.home .blog-section .blog-entry .meta > div a:hover {
+    color: #333333; 
+}
+    
+body.home .blog-section .blog-entry .btn-custom {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #E6922E; 
+}
+
+/*---------------------------------- breadcrumb ------------------------------------*/
+.page-area {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+}
+
+.breadcrumb-overlay {
+    position: absolute;
+    background: rgba(10, 24, 40, 0.8) none repeat scroll 0 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+  
+.breadcrumb {
+    padding-top: 190px;
+    background-color: transparent;
+}
+  
+.breadcrumb .section-headline h3 {
+    font-size: 38px;
+    line-height: 42px;
+    text-transform: uppercase;
+    position: relative;
+    top: 15px;
+    font-weight: 700;
+}
+
+.breadcrumb-row {
+    background-color: rgba(0,0,0,.5);
+    margin-top: -63px;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb-row ul {
+    margin: 0;
+    list-style: none;
+}
+
+.list-inline li {
+    display: inline-block
+}
+
+/*---------------------------------- news -----------------------------------------------*/
+.news img {
+    width: 100%;
+}
+
+.news .more a {
+    color: #E6922E;
+}
+
+.news .more a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.news .separator {
+    color: #fff;
+    background-color: #E6922E;
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    position: relative;
+}
+
+@media (max-width:786px){
+    .news .carousel-item {
+        height: 280px;
+    }
+}
+
+/*---------------------------------- gallery --------------------------------------------*/
+.gallery iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .separator {
+    color: #fff;
+    background-color: #E6922E;
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    position: relative;
+}
+
+@media (max-width:786px){
+    .gallery .carousel-item{
+        height: 280px;
+    }
+}
+
+/*---------------------------------- Events -----------------------------------------*/
+.event .card a {
+    color: #E6922E;
+}
+
+.event .card a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.event .pagination a {
+    color: #E6922E;
+}
+
+/*---------------------------------- president -------------------------------------*/
+.club-president {
+    color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+.club-president img {
+    width: 100%;
+    height: 340px;
+}
+
+.club-president .sub-title {
+	font-size: 20px;
+	font-weight: 700;
+	position: relative;
+}
+
+@media (max-width:786px){
+    .club-president {
+        text-align: center;
+    }
+
+    .club-president p {
+        display: none;
+    }
+}
+
+/*---------------------------------- membership ------------------------------------*/
+.member #nav-home p {
+    line-height: 30px;
+}
+
+.member #nav-login .content {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 0 10px rgba(10, 24, 40, 0.8);
+}
+
+.member #nav-login .content .signin-text {
+    font-style: normal;
+    font-weight: 600 !important;
+}
+
+.member #nav-login .content .form-control {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: solid #E6922E !important;
+    border-width: 0 0 1px 0 !important;
+    color: #495057;
+    height: auto;
+    background: transparent;
+    background-clip: padding-box;
+}
+
+.member #nav-login .content .form-control:focus {
+    color: #495057;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+
+@media (max-width:786px){
+    .member #nav-login .loginbg {
+        display: none;
+    }
+}
+
+/*---------------------------------- position --------------------------------------*/
+.position #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+    color: #E6922E;
+}
+
+.position #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #000;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-top: 2px solid #E6922E !important;
+    border-right: 2px solid #E6922E !important;
+    border-left: 2px solid #E6922E !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.position img {
+    width: 100%;
+    height: 100%;
+}
+
+.position .separator {
+    color: #fff;
+    background-color: #E6922E;
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    position: relative;
+}
+
+/*---------------------------------- teams -----------------------------------------*/
+.widget-next-match {
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+}
+  
+.widget-vs {
+    width: 100%; 
+}
+    
+.widget-vs img {
+    max-width: 120px; 
+}
+    
+.widget-vs h3 {
+    color: #ee1e46;
+    font-weight: 700;
+    font-size: 18px; 
+}
+
+.widget-vs .score {
+    display: inline-block;
+    font-size: 3rem;
+    color: #E6922E;
+    font-weight: 700; 
+}
+    
+.widget-vs .vs > span {
+    display: inline-block;
+    font-size: 3rem;
+    background: #E6922E;
+    border-radius: 25%;
+    color: #fff;
+    font-weight: 700; 
+}
+    
+.widget-vs-contents h4 {
+    color: #ee1e46;
+    font-size: 16px;
+    font-weight: 700; 
+}
+  
+.widget-title {
+    color: #fff;
+    background-color: #E6922E; 
+}
+    
+.widget-title h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700; 
+}
+
+.teams .mydatatable {
+    width: 100%;
+}
+
+.teams .separator {
+    color: #fff;
+    background-color: #E6922E;
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    position: relative;
+}
+
+.teams #nav-team img {
+    width: 100%;
+}
+
+/*---------------------------------- academy ---------------------------------------*/
+.academy img {
+    width: 100%;
+}
+
+.academy p {
+    line-height: 30px;
+}
+
+.academy-activities .separator {
+    color: #fff;
+    background-color: #E6922E;
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    position: relative;
+}
+
+.academy-activities .card {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.academy-activities .card-body {
+    background-color: rgba(0,0,0,.5);
+}
+
+.academy-activities .card:hover .card-body {
+    visibility: hidden;
+}
+
+/*---------------------------------- academyactivities-------------------------------*/
+.activities-section p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.activities-section img {
+    width: 100%;
+    height: auto;
+}
+
+.activities-section .branches {
+    background-color: #dddddd;
+}
+
+/*---------------------------------- partners ---------------------------------------*/
+.club-partners .partner-item img {
+    max-width: 100%;
+    height: 80px;
+}
+
+.club-partners .partner-item:hover {
+    box-shadow: 5px 5px 10px rgb(61, 60, 60);
+}
+
+/*---------------------------------- contact us ------------------------------------*/
+.btn {
+    color: #fff;
+    background-color: #E6922E;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    border-width: 2px; 
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; 
+}
+
+.btn:hover{
+    border-color: #000;
+    background: transparent;
+    color: #E6922E; 
+}
+
+.single-icon i {
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 20px;
+    color:#E6922E;
+}
+
+.single-icon p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+.contact-icon {
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 10px rgb(61, 60, 60);
+    position: relative;
+    z-index: 1;
+}
+
+/*---------------------------------- sponsors --------------------------------------*/
+.sponsors {
+    background-color: #ebebeb;
+}
+
+.sponsors img {
+    width: 100%;
+    height: 80px;
+}
+
+@media (max-width:768px){
+    .sponsors {
+        text-align: center;
+    }
+    .sponsors img {
+        width: 150px;
+    }
+}
+
+/*---------------------------------- footer ----------------------------------------*/
+.footer-section {
+    position: relative;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+}
+    
+.footer-section .widget h3 {
+    color: #fff;
+    font-size: 18px; 
+}
+
+.footer-section .separator {
+    color: #fff;
+    background-color: #E6922E;
+    display: inline-block;
+    height: 3px;
+    width: 80px;
+    position: relative;
+}
+
+.footer-section .widget .links li {
+    margin-bottom: 10px; 
+}
+      
+.footer-section .widget .links li a {
+    color: #fff; 
+}
+        
+.footer-section .widget .links li a:hover {
+    color: #E6922E; 
+}
+
+.footer-overlay {
+    position: absolute;
+    background: rgba(10, 24, 40, 0.8) none repeat scroll 0 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width:786px){
+    .footer-section {
+        text-align: center;
+    }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta name="description" content="">
+
+        <title>Club Name</title>
+
+        <link rel="stylesheet" href="assets/jquery/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/aos/aos.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <header class="header-one">
+
+            <!-- Start top bar -->
+            <div class="topbar-area pt-3 d-none d-md-block">
+                <div class="container">
+                    <div class="row">
+                       <div class="col-md-6 col-sm-6">
+                           <div class="topbar-left">
+                                <ul>
+                                    <li ><a href="#"><i class="fa fa-envelope"></i> info@aievari4.com</a></li>
+                                    <li class="ml-2"><a href="#"><i class="fa fa-phone"></i> +909-654-9805</a></li>
+                                </ul>
+							</div>
+                        </div>
+                        <div class="ml-auto">
+                            <div class="topbar-right">
+                                <div class="top-social">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End top bar -->
+
+            <!-- Start nav bar-->
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light p-3">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item active dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Club
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="management.html">Management</a>
+                                    <a class="dropdown-item" href="news.html">News</a>
+                                    <a class="dropdown-item" href="gallery.html">Gallery</a>
+                                    <a class="dropdown-item" href="events.html">Events</a>
+                                    <a class="dropdown-item active" href="membership.html">MemberShip</a>
+                                    <a class="dropdown-item" href="locations.html">Locations</a>
+                                    <a class="dropdown-item" href="sponsors.html">Sponsors</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="teams.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Teams
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="team-football.html">Football Team</a>
+                                    <a class="dropdown-item" href="team-basketball.html">Basketball Team</a>
+                                    <a class="dropdown-item" href="team-volleyball.html">Volleyball Team</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="academy.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Academy
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="academy.html">About</a>
+                                    <a class="dropdown-item" href="academy-activities.html">Activities</a>
+                                    <a class="dropdown-item" href="academy-news.html">News</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- End nav bar-->
+
+        </header>
+
+        <!-- Start breadcrumb Area -->
+        <div class="page-area" style="background-image: url(assets/img/bg4.jpg);">
+            <div class="breadcrumb-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="breadcrumb text-center">
+                            <div class="section-headline white-headline">
+                                <h3 class="text-white pt-3">Membership</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="breadcrumb-row">
+            <div class="container">
+                <ul class="list-inline pl-3">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><i class="fas fa-chevron-right text-white m-1"></i></li>
+                    <li><a href="membership.html">Membership</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End breadcrumb Area -->
+
+        <!-- Start page content -->
+        <section class="member m-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Terms</a>
+                                <a class="nav-item nav-link" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="false">Login</a>
+                                <a class="nav-item nav-link disabled" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content py-3 px-3 px-sm-0 mb-5" id="nav-tabContent">
+
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="row mt-5">
+                                    <div class="col-md-6">
+                                        <h5>Your Guide to a new membership:</h5>
+                                        <p>
+                                            1- Education Graduation Certificate (original copy).
+                                            <br>
+                                            2- Marriage Contract Certificate. 
+                                            <br>
+                                            3- Criminal case, certificate for the primary member.
+                                            <br>
+                                            4- Valid national ID numbers for members over 16 years old 
+                                            <br>
+                                            5- Birth certificate of siblings (original copy)
+                                            <br>
+                                            6- Personal photos of all the members of the family.
+                                            <br>
+                                            7- Siblings must be single and under 25 years before payment.
+                                            <br>
+                                            8- Membership applications form coasts 500 LE.
+                                            <br>
+                                            9- Check book is required in case of installments.
+                                            <br>
+                                            10- Writing checks for the due amount is required.
+                                            <br>
+                                            11- A declaration to be signed by the member for the due fees. 
+                                            <br>
+                                            12- In case of adding a spouse an extra 2760 LE is added plus 114 LE for membership form.
+                                            <br>
+                                            13- Annual subscription fees 3000 LE for the first time.
+                                        </p>
+                                        <h5>Documents required for Fifth of Settlement branch</h5>
+                                        <p>
+                                            1- Education Graduation Certificate (original copy).
+                                            <br>
+                                            2- Marriage Contract Certificate. 
+                                            <br>
+                                            3- Criminal case, certificate for the primary member.
+                                            <br>
+                                            4- Valid national ID numbers for members over 16 years old 
+                                            <br>
+                                            5- Birth certificate of siblings (original copy)
+                                            <br>
+                                            6- Personal photos of all the members of the family.
+                                            <br>
+                                            7- Siblings must be single and under 25 years before payment.
+                                            <br>
+                                            8- Membership applications form coasts 500 LE.
+                                            <br>
+                                            9- Check book is required in case of installments.
+                                            <br>
+                                            10- Writing checks for the due amount is required.
+                                            <br>
+                                            11- A declaration to be signed by the member for the due fees. 
+                                            <br>
+                                            12- In case of adding a spouse an extra 2760 LE is added plus 114 LE for membership form.
+                                            <br>
+                                            13- Annual subscription fees 3000 LE for the first time.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5>Membership prices for all the branches:</h5>
+                                        <p>
+                                            For Bachelor Degree holders 500,000 LE, an extra 100,000 LE to be added in case of installment as administration fees until the 30th of June. Then, membership fees increases to 750,000 LE for Bachelor Degrees holders and 1,000000 LE for Non-Bachelor Degrees holders.
+                                        </p>
+                                        <h5>Membership of Nasr City Branch:</h5>
+                                        <p>
+                                            For Bachelor Degree holders 500,000 LE, an extra 100,000 LE to be added in case of installment as administration fees until the 30th of June. Then, membership fees increases to 750,000 LE for Bachelor Degrees holders and 1,000000 LE for Non-Bachelor Degrees holders.
+                                        </p>
+                                        <h5>Membership of Mansoura Branch:</h5>
+                                        <p>
+                                            For Bachelor Degree holders 500,000 LE, an extra 100,000 LE to be added in case of installment as administration fees until the 30th of June. Then, membership fees increases to 750,000 LE for Bachelor Degrees holders and 1,000000 LE for Non-Bachelor Degrees holders.
+                                        </p>
+                                        <h5>Membership of Elmahalla Branch:</h5>
+                                        <p>
+                                            For Bachelor Degree holders 500,000 LE, an extra 100,000 LE to be added in case of installment as administration fees until the 30th of June. Then, membership fees increases to 750,000 LE for Bachelor Degrees holders and 1,000000 LE for Non-Bachelor Degrees holders.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                                <div class="row content p-5 mt-5 mb-5" style="background-image: url(assets/img/item11.png);">
+                                    <div class="col-md-6 mb-3">
+                                        <img src="assets/img/undraw_Forms_re_pkrt.svg" class="loginbg img-fluid" alt="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="signin-text mb-3 text-white"> Sign In </h3>
+                                        <form action="">
+                                            <div class="form-group mt-3 mb-3">
+                                                <label for="memberId" class="text-white"> Membership Id </label>
+                                                <input type="text" name="memberId" id="memberId" class="form-control" placeholder="Membership Id" aria-describedby="helpId">
+                                            </div>
+                                            <div class="form-group mt-3 mb-3">
+                                                <label for="password" class="text-white"> Password </label>
+                                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" aria-describedby="helpId">
+                                            </div>
+                                            <div class="form-check mb-3">
+                                              <label class="form-check-label text-white">
+                                                <input type="checkbox" class="form-check-input" name="checkbox" id="checkbox" value="checkedValue" checked>
+                                                Remember Me
+                                              </label>
+                                            </div>
+                                            <button class="btn btn-class"> Login </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End page content -->
+
+        <!-- Strat sponsors section -->
+        <section class="sponsors mt-5 pt-5 pb-5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-12 mb-4" data-aos="fade-right" data-aos-duration="2800">
+                        <img src="assets/img/s1.png" alt="">
+                    </div>
+                    <div class="col-md-2 col-sm-12 mb-4" data-aos="fade-right" data-aos-duration="2400">
+                        <img src="assets/img/s2.png" alt="">
+                    </div>
+                    <div class="col-md-2 col-sm-12 mb-4" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="assets/img/s3.png" alt="">
+                    </div>
+                    <div class="col-md-2 col-sm-12 mb-4" data-aos="fade-left" data-aos-duration="2000">
+                        <img src="assets/img/s4.png" alt="">
+                    </div>
+                    <div class="col-md-2 col-sm-12 mb-4" data-aos="fade-left" data-aos-duration="2400">
+                        <img src="assets/img/s5.png" alt="">
+                    </div>
+                    <div class="col-md-2 col-sm-12 mb-2" data-aos="fade-left" data-aos-duration="2800">
+                        <img src="assets/img/s6.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End sponsors section -->
+
+        <!-- Start footer-->
+        <footer class="footer-section p-5" style="background-image: url(assets/img/bg5.jpg);">
+            <div class="footer-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 mb-4">
+                        <div class="widget mb-3">
+                        <h3>News</h3>
+                        <div class="separator mb-2"></div>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Club News</a></li>
+                                <li><a href="#">Media Center</a></li>
+                                <li><a href="#">Video</a></li>
+                                <li><a href="#">RSS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="widget mb-3">
+                            <h3>Tickets</h3>
+                            <div class="separator mb-2"></div>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Online Ticket</a></li>
+                                <li><a href="#">Payment and Prices</a></li>
+                                <li><a href="#">Contact &amp; Booking</a></li>
+                                <li><a href="#">Tickets</a></li>
+                                <li><a href="#">Coupon</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-4">
+                        <div class="widget mb-3">
+                            <h3>Matches</h3>
+                            <div class="separator mb-2"></div>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Standings</a></li>
+                                <li><a href="#">World Cup</a></li>
+                                <li><a href="#">La Lega</a></li>
+                                <li><a href="#">Hyper Cup</a></li>
+                                <li><a href="#">World League</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-3 mb-4">
+                        <div class="widget mb-3">
+                            <h3>Social</h3>
+                            <div class="separator mb-2"></div>
+                            <ul class="list-unstyled links">
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer-->
+    
+        <script src="assets/jquery/jquery-3.5.1.min.js"></script>
+        <script src="assets/jquery/jquery-ui/jquery-ui.min.js"></script>
+
+        <script src="assets/bootstrap/js/popper.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="assets/aos/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script src="assets/js/script.js"></script>
+        
+    </body>
+
+</html>
